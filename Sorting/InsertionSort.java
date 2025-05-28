@@ -4,7 +4,7 @@ public class InsertionSort {
         int[] arr = {57, 2, 84, 10, 94, 23};
         int n = arr.length;
 
-        for(int i=1; i<arr.n; i++){
+        for(int i=1; i<n; i++){
             
             int temp = arr[i];
             int j = i-1;
@@ -15,7 +15,9 @@ public class InsertionSort {
                 j--;
             }
             arr[j+1] = temp;
-            System.out.print(arr[i] + " ");
+            for( int num : arr){
+                System.out.print(num + " ");
+            }
         }
     }
 }
